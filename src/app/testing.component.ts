@@ -1,14 +1,16 @@
 import { style } from '@angular/animations';
-import { Component} from '@angular/core';
+import { Component, Inject} from '@angular/core';
 
 
-@Component({    
-    selector: 'app-test',
-    template:'<h1>testing component</h1>',
-    styles: ['h1 { color:blue }' ]
-
+@Component({
+  selector: 'app-test',
+  template:'<button class="panel" [style.background-color]="color" (click)="onClick($event)">Click</button>',
+  styles: ['h1 { color:blue }'],
 })
-
 export class TestComponent {
-    
+
+  color: string = 'blue';
+  onClick(event:any) {
+    alert('Click color: ' + this.color);
+  }
 }
