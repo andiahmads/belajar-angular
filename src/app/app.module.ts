@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './testing.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,

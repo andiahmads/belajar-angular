@@ -2,4 +2,9 @@
 <h1>{{name}}</h1>
 <app-test></app-test>
 
+
 <app-interpolation></app-interpolation>
+<br/>
+<br/>
+<button (click)="toogleChild()">Show Component</button>
+<app-lifecycle *ngIf="isChild"></app-lifecycle>
